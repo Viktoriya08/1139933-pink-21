@@ -1,1 +1,61 @@
-// Начните писать стили здесь
+/* open-sans-300 - latin_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Open Sans"),
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+}
+/* open-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Open Sans"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+}
+/* open-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Open Sans"),
+    url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
+}
+
+@color-white: #FFFFFF;
+@color-black: #000000;
+@color-grey: #F2F2F2;
+@color-darkblue: #1D2631;
+@color-basic: #283645;
+@color-hit: #D22856;
+@color-green-button: #2AAB6D;
+@color-green-hover: #1C9B5E;
+@color-button-disabled: #E5E5E5;
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: @color-basic;
+  text-transform: uppercase;
+  background-color: @color-white;
+}
+
+@import "../less/page-header.less";
+@import "../less/download.less";
+@import "../less/advantages.less";
+@import "../less/news.less";
+@import "../less/reviews.less";
+@import "../less/tariffs.less";
+@import "../less/contacts.less";

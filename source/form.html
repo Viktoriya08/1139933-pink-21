@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>HTML Academy: Пинк</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="page__body">
         <header class="page-header">
@@ -12,7 +13,7 @@
             <nav class="main-nav">
                 <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
                 <div class="main-nav__wrapper">
-                    <ul class="main-nav__list site">
+                    <ul class="main-nav__list site-list">
                         <li class="site-list__item">
                             <a>
                                 Главная
@@ -47,7 +48,7 @@
                     <form class="participant-form" action="https://echo.htmlacademy.ru">
                         <h2 class="visually-hidden">Данные участника</h2>
                         <p class="participant-text">
-                            Поделитесь своей историей и получите шанс выиграть ценный приз &mdash 1000 миль на вашу бонусную карту!
+                            Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
                         </p>
                         <div class="participant__about user">
                             <label class="user__name" for="second-name">
@@ -68,27 +69,27 @@
                                 Ваши безбашенные достижения в путешествии
                             </p>
                             <input type="checkbox" id="selfi" name="selfi" />
-                            <label for="selfi">Сделал селфи с акулой</label>
+                            <label class="journey__adventures" for="selfi">Сделал селфи с акулой</label>
                             <input type="checkbox" id="beach" name="beach" />
-                            <label for="beach">Обгорел на пляже</label>
+                            <label class="journey__adventures" for="beach">Обгорел на пляже</label>
                             <input type="checkbox" id="chuck-norris" name="chuck-norris" />
-                            <label for="chuck-norris">Видел Чака Норриса</label>
+                            <label class="journey__adventures" for="chuck-norris">Видел Чака Норриса</label>
                             <input type="checkbox" id="souvenirs" name="souvenirs" />
-                            <label for="souvenirs">Накупил сувениров</label>
+                            <label class="journey__adventures" for="souvenirs">Накупил сувениров</label>
                             <input type="checkbox" id="tower" name="tower" />
-                            <label for="tower">Удержал башню</label>
+                            <label class="journey__adventures" for="tower">Удержал башню</label>
                             <input type="checkbox" id="hotel" name="hotel" />
-                            <label for="hotel">Разгромил отель</label>
+                            <label class="journey__adventures" for="hotel">Разгромил отель</label>
                         </div>
                         <div class="participant__contacts contacts">
                             <p class="contacts__title">
                                 Контактная информация
                             </p>
-                            <label class="contacts__phone" for="phone">
+                            <label class="contacts__details" for="phone">
                                 Номер телефона
                                 <input type="text" name="phone" value="Номер, пожалуйста" id="phone" />
                             </label>
-                            <label class="contacts__adres" for="adres">
+                            <label class="contacts__details" for="adres">
                                 Адрес почты
                                 <input type="text" name="adres" value="Введите почту *" id="adres" />
                             </label>

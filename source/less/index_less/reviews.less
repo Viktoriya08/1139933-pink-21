@@ -4,6 +4,19 @@
   line-height: 30px;
   font-weight: 400;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
+
+.reviews__item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__author {
@@ -11,4 +24,20 @@
   line-height: 30px;
   font-weight: 700;
   color: @color-black;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+}
+
+.reviews__about-author {
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+  }
 }

@@ -31,15 +31,9 @@
     url("../fonts/opensansbold.woff") format("woff");
 }
 
-@color-white: #FFFFFF;
-@color-black: #000000;
-@color-grey: #F2F2F2;
-@color-darkblue: #1D2631;
-@color-basic: #283645;
-@color-hit: #D22856;
-@color-green-button: #2AAB6D;
-@color-green-hover: #1C9B5E;
-@color-button-disabled: #E5E5E5;
+.page {
+  height: 100%;
+}
 
 body {
   min-width: 320px;
@@ -54,6 +48,25 @@ body {
   background-color: @color-white;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@import "../less/page-footer.less";
 @import "../less/index_less/page-header.less";
 @import "../less/index_less/download.less";
 @import "../less/index_less/advantages.less";
@@ -67,19 +80,7 @@ body {
 @import "../less/form_less/journey.less";
 @import "../less/form_less/contacts.less";
 @import "../less/form_less/comment.less";
-
+@import "../less/form_less/platform.less";
+@import "../less/form_less/send.less";
 @import "../less/catalog_less/users-content.less";
 @import "../less/catalog_less/change.less";
-
-
-
-
-
-
-
-
-
-
-@tablet-width: 660px;
-@desktop-width: 1200px;
-@mobile-width-only: 659px;

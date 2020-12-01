@@ -2,6 +2,19 @@
 .user {
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  @media (min-width: @tablet-width) {
+    order: -2;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 }
 
 .user__name {

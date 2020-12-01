@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>HTML Academy: Пинк</title>
         <link rel="stylesheet" href="css/style.css">
@@ -47,10 +47,12 @@
                         <h1 class="participant__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
                     </header>
                     <form class="participant-form" action="https://echo.htmlacademy.ru">
-                        <h2 class="visually-hidden">Данные участника</h2>
-                        <p class="participant-text">
-                            Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
-                        </p>
+                        <div class="participant-history">
+                          <h2 class="visually-hidden">Данные участника</h2>
+                          <p class="participant-text">
+                              Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
+                          </p>
+                        </div>
                         <div class="participant__about user">
                             <label class="user__name" for="second-name">
                                 Фамилия:
@@ -102,12 +104,14 @@
                           </fieldset>
                         </div>
                         <div class="participant__platform">
-                            <p class="participant__title">
+                          <fieldset class="participant__wraper-desktop">
+                            <legend class="participant__title">
                                 С каким приложением путешествовали?
-                            </p>
+                            </legend>
                             <label class="participant__app"> <input type="radio" name="iOS" value="" />Pink для iOS </label>
                             <label class="participant__app"> <input type="radio" name="Android" value="" />Pink для Android </label>
                             <label class="participant__app"> <input type="radio" name="Windows" value="" />Windows Phone </label>
+                          </fieldset>
                         </div>
                         <div class="participant__comment comment">
                           <fieldset class="comment__wraper-desktop">
@@ -128,7 +132,7 @@
 
         <footer class="page-footer">
             <div class="page-footer__icon">
-              <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Логотип Пинк">
+              <img src="img/logotype-footer.svg" width="145" height="40" alt="Логотип Пинк">
             </div>
             <div class="page-footer__social social">
                 <ul class="social__list">

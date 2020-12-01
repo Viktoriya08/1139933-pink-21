@@ -1,7 +1,31 @@
 
-.platform {    /*сделать импорт файла в стайл.лесс*/
-  display: flex;
-  flex-direction: column;
+.participant__platform {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  background-color: @color-grey;
+  color: @color-hit;
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  @media (min-width: @tablet-width) {
+    order: -1;
+    background-color: @color-white;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+.participant__wraper-desktop {
+  @media (max-width: @mobile-width-only) {
+    border: 0;
+  }
 }
 
 .participant__title {
@@ -9,4 +33,5 @@
   line-height: 18px;
   font-weight: 400;
   color: @color-hit;
+  text-align: center;
 }

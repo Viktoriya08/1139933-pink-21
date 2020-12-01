@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>HTML Academy: Пинк</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -42,7 +43,7 @@
         <main class="page-form">
             <section class="participant">
                 <div class="participant__wrapper">
-                    <header>
+                    <header class="participant__header">
                         <h1 class="participant__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
                     </header>
                     <form class="participant-form" action="https://echo.htmlacademy.ru">
@@ -65,9 +66,10 @@
                             </label>
                         </div>
                         <div class="participant__adventures journey">
-                            <p class="journey__title">
+                          <fieldset class="journey__wraper-desktop">
+                            <legend class="journey__title">
                                 Ваши безбашенные достижения в путешествии
-                            </p>
+                            </legend>
                             <input type="checkbox" id="selfi" name="selfi" />
                             <label class="journey__adventures" for="selfi">Сделал селфи с акулой</label>
                             <input type="checkbox" id="beach" name="beach" />
@@ -80,19 +82,24 @@
                             <label class="journey__adventures" for="tower">Удержал башню</label>
                             <input type="checkbox" id="hotel" name="hotel" />
                             <label class="journey__adventures" for="hotel">Разгромил отель</label>
+                          </fieldset>
                         </div>
                         <div class="participant__contacts contacts">
-                            <p class="contacts__title">
+                            <fieldset class="contacts__wraper-desktop">
+                              <legend class="contacts__legend">
                                 Контактная информация
-                            </p>
-                            <label class="contacts__details" for="phone">
-                                Номер телефона
-                                <input type="text" name="phone" value="Номер, пожалуйста" id="phone" />
-                            </label>
-                            <label class="contacts__details" for="adres">
-                                Адрес почты
-                                <input type="text" name="adres" value="Введите почту *" id="adres" />
-                            </label>
+                              </legend>
+                              <div class="contacts__wraper">
+                                <label class="contacts__details" for="phone">
+                                  Номер телефона
+                                  <input type="text" name="phone" value="Номер, пожалуйста" id="phone" />
+                                </label>
+                                <label class="contacts__details" for="adres">
+                                  Адрес почты
+                                  <input type="text" name="adres" value="Введите почту *" id="adres" />
+                                </label>
+                              </div>
+                          </fieldset>
                         </div>
                         <div class="participant__platform">
                             <p class="participant__title">
@@ -103,10 +110,12 @@
                             <label class="participant__app"> <input type="radio" name="Windows" value="" />Windows Phone </label>
                         </div>
                         <div class="participant__comment comment">
-                            <p class="comment__title">
+                          <fieldset class="comment__wraper-desktop">
+                            <legend class="comment__title">
                                 Опишите свои эмоции
-                            </p>
+                            </legend>
                             <textarea name="comment" id="comment" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+                          </fieldset>
                         </div>
                         <div class="participant__send">
                             <input type="submit" value="Оплатить форму" />

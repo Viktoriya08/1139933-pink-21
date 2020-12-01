@@ -1,5 +1,19 @@
+
 .journey {
   background-color: @color-grey;
+
+  @media (max-width: @mobile-width-only) {
+    background-color: @color-white;
+  }
+}
+
+.journey__wraper-desktop {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: @mobile-width-only) {
+    border: 0;
+  }
 }
 
 .journey__title {

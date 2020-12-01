@@ -4,12 +4,17 @@
   line-height: 30px;
   font-weight: 400;
   text-align: center;
+}
+
+.reviews__wrapper {
   padding-left: 20px;
   padding-right: 20px;
 
   @media (min-width: @desktop-width) {
+    margin: 0 auto;
     padding-left: 130px;
     padding-right: 130px;
+    max-width: 1200px;
   }
 }
 
@@ -25,10 +30,6 @@
   font-weight: 700;
   color: @color-black;
   margin: 0;
-
-  @media (min-width: @tablet-width) {
-    order: 2;
-  }
 }
 
 .reviews__about-author {
@@ -37,7 +38,13 @@
   line-height: 30px;
   font-weight: 400;
 
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.reviews__text {
   @media (min-width: @tablet-width) {
-    order: 3;
+    order: -1;
   }
 }

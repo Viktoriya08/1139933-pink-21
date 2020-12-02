@@ -1,9 +1,32 @@
 
+.participant-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.participant-history {
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  @media (min-width: @tablet-width) {
+    order: -3;
+  }
+}
+
+.participant__header {
+  background-color: @color-darkblue;
+  min-height: 200px; /*убрать, когда появится картинка*/
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .participant__title {
   font-size: 24px;
   line-height: 32px;
   font-weight: 300;
+  margin: 0;
   text-align: center;
+  color: @color-white;
 }
 
 .participant-text {
@@ -12,15 +35,6 @@
   font-weight: 400;
   text-align: center;
   text-transform: none;
-}
-
-.participant__platform {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  text-align: center;
-  background-color: @color-grey;
-  color: @color-hit;
 }
 
 .participant__app {

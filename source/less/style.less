@@ -1,5 +1,10 @@
 @import "../less/color.less";
 
+/*Viewports*/
+@tablet-width: 660px;
+@desktop-width: 1200px;
+@mobile-width-only: 659px;
+
 /* open-sans-300 - latin_cyrillic */
 @font-face {
   font-family: "Open Sans";
@@ -44,7 +49,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: @color-basic;
-  text-transform: uppercase;
+  text-transform: none;
   background-color: @color-white;
 }
 
@@ -66,6 +71,7 @@ img {
   overflow: hidden;
 }
 
+
 @import "../less/page-footer.less";
 @import "../less/index_less/page-header.less";
 @import "../less/index_less/download.less";
@@ -74,11 +80,12 @@ img {
 @import "../less/index_less/reviews.less";
 @import "../less/index_less/tariffs.less";
 @import "../less/index_less/contacts.less";
-
+@import "../less/index_less/site-list.less";
+@import "../less/index_less/main-nav.less";
 @import "../less/form_less/participant.less";
 @import "../less/form_less/user.less";
 @import "../less/form_less/journey.less";
-@import "../less/form_less/contacts.less";
+@import "../less/form_less/contacts_form.less";
 @import "../less/form_less/comment.less";
 @import "../less/form_less/platform.less";
 @import "../less/form_less/send.less";

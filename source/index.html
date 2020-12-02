@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -43,7 +44,7 @@
 
       <section class="download">
         <div class="download__wrapper">
-        <header>
+        <header class="download__header">
             <h1 class="visually-hidden">Пинк это мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
             <p class="download__slogan">
             Взгляни на жизнь<br>
@@ -181,10 +182,12 @@
 
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="visually-hidden">Контакты</h2>
-          <p>Остались вопросы? <br>
-            Свяжитесь с нами!
-          </p>
+          <div class="contacts__header">
+            <h2 class="visually-hidden">Контакты</h2>
+            <p class="contacts__main-text">Остались вопросы? <br>
+              Свяжитесь с нами!
+            </p>
+          </div>
           <div class="contacts__call">
             <p class="contacts__text">Звоните</p>
             <a class="contacts__data" href="tel:+78125556666">
@@ -212,7 +215,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__icon">
-        <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Логотип Пинк">
+        <img src="img/logotype-footer.svg" width="145" height="40" alt="Логотип Пинк">
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -228,7 +231,7 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
+        <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </div>
     </footer>

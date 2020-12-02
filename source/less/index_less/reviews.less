@@ -6,9 +6,45 @@
   text-align: center;
 }
 
+.reviews__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    padding-left: 130px;
+    padding-right: 130px;
+    max-width: 1200px;
+  }
+}
+
+.reviews__item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 .reviews__author {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: @color-black;
+  margin: 0;
+}
+
+.reviews__about-author {
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.reviews__text {
+  @media (min-width: @tablet-width) {
+    order: -1;
+  }
 }

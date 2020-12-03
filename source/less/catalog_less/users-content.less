@@ -5,21 +5,80 @@
   text-align: center;
   background-color: @color-darkblue;
   color: @color-white;
+  padding: 0 20px;
+}
+
+.users-content__main-title {
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    max-width: 940px;
+  }
 }
 
 .users-content__title {
+  margin: 0 20px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   text-align: center;
   text-transform: none;
+
+  @media (min-width: @desktop-width) {
+    margin: auto;
+    max-width: 940px;
+  }
+}
+
+.users-content__panorama {
+  margin: 0;
+}
+
+.users-content__tablet-desktop {
+  margin: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 40px auto;
+    max-width: 940px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+  }
+}
+
+.users-content__foto {
+  text-align: center;
 }
 
 .users-content__user {
   background-color: @color-grey;
+
+  @media (min-width: @desktop-width) {
+    margin: auto;
+    max-width: 940px;
+  }
+}
+
+.users-content__user--indent {
+  margin: 0 20px;
+
+  @media (min-width: @desktop-width) {
+    margin: auto;
+    max-width: 940px;
+  }
 }
 
 .users-content__user-title {
+  margin: 0;
   font-size: 12px;
   line-height: 24px;
   font-weight: 300;
@@ -31,6 +90,7 @@
 }
 
 .users-content__text {
+  margin: 0;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
@@ -38,6 +98,7 @@
 }
 
 .users-content__number {
+  margin: 0;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;

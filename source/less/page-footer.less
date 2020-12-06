@@ -1,7 +1,6 @@
 
 .page-footer {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 35px 20px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -26,5 +25,61 @@
 }
 
 .social__item {
-  padding: 0 7;
+  margin-left: 5px;
+  width: 48px;
+  height: 48px;
+  border: solid 3px @color-grey;
+  border-radius: 50%;
+
+  &:hover {
+    border: solid 3px @color-basic;
+  }
+
+  &:active {
+    border: solid 3px @color-basic;
+    opacity: 0.3;
+  }
+}
+
+.social__link {
+  display: block;
+  margin-top: 12px;
+}
+
+.page-footer__social {
+  margin: 35px 0px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__text {
+  margin: 8px 15px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.page-footer__link {
+  display: block;
+  text-decoration: none;
+}
+
+.page-footer__link path {
+  fill: @color-hit;
+
+  &:hover {
+    fill: @color-basic;
+  }
+
+  &:active {
+    fill: @color-basic;
+    opacity: 0.3;
+  }
 }

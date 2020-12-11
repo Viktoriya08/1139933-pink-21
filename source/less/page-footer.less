@@ -23,6 +23,20 @@
   display: flex;
   justify-content: center;
 }
+.page-footer__icon-block {
+  display: block;
+  height: 100%;
+  width: min-content;
+  margin: auto;
+}
+
+.page-footer__icon-block:hover path {
+  fill: @color-hit;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
 
 .social__item {
   margin-left: 5px;

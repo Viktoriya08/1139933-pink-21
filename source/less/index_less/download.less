@@ -1,6 +1,9 @@
 
 .download {
   background-color: @color-darkblue;
+  background-image: url(../../img/back-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .download__wrapper {
@@ -32,10 +35,12 @@
   color: @color-white;
   padding-top: 20px;
   padding-bottom: 30px;
+  background-color: @color-darkblue;
 
   @media (min-width: @tablet-width) {
     width: 50%;
     padding: 0;
+    background-color: transparent;
   }
 }
 
@@ -86,6 +91,11 @@
 
 .download__item {
   padding: 0px 17px;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .download__intro {
@@ -111,10 +121,26 @@
   border-radius: 29px;
   display: block;
   margin: 0 auto;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @color-white;
+    color: @color-hit;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 
   @media (min-width: @tablet-width) {
     padding: 18px 52px;
     margin-top: 30px;
     margin-bottom: 25px;
   }
+}
+
+.download__icon {
+  display: block;
+  object-fit: contain;
+  text-align: center;
 }

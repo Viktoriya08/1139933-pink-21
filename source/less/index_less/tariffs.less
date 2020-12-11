@@ -5,7 +5,6 @@
 
 .tariffs__wrapper {
   padding: 40px 20px;
-  overflow-x: auto;
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
@@ -13,6 +12,10 @@
     padding-right: 130px;
     max-width: 1200px;
   }
+}
+
+.tariffs__scroll {
+  overflow-x: auto;
 }
 
 .tariffs__list {
@@ -27,6 +30,7 @@
 .tariffs__list td {
   border: 2px solid;
   border-color: @color-button-disabled;
+  min-width: 153px;
 }
 
 .tariffs__name {
@@ -52,6 +56,21 @@
   line-height: 30px;
   font-weight: 300;
   margin: 0;
+}
+
+.tariffs__mark {
+
+  &--have {
+    background-image: url(../../img/yes.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--nohave {
+    background-image: url(../../img/no.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .tariffs-option {

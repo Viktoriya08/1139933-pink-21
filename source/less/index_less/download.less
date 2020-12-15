@@ -1,9 +1,20 @@
 
 .download {
   background-color: @color-darkblue;
-  background-image: url(../../img/back-desktop.jpg);
+  /* background-image: url(../../img/back-mobile.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: top; */
+
+  @media (min-width: @tablet-width) {
+    background-image: url(../../img/back-desktop.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 853px;
+  }
 }
 
 .download__wrapper {
@@ -11,11 +22,38 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
+
+/*   padding-left: 20px;
+  padding-right: 20px; */
+
+   @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 
-@media (min-width: @tablet-width) {
+ @media (min-width: @tablet-width) {
+  .download__wrapper::after {
+    content: "";
+      display: block;
+      top: 10px;
+      left: 0px;
+      width: 660px;
+      height: 545px;
+      background-image: url(../../img/phone-tablet.png);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      grid-row-start: 1;
+      grid-row-end: -1;
+      grid-column-start: 1;
+      grid-column-end: -1;
+
+  }
+}
+
+
+/* @media (min-width: @tablet-width) {
   .download__wrapper {
     display: flex;
     flex-direction: column;
@@ -29,29 +67,67 @@
       max-width: 1200px;
     }
   }
-}
+} */
 
 .download__container {
   color: @color-white;
   padding-top: 20px;
   padding-bottom: 30px;
   background-color: @color-darkblue;
+  /* z-index: 2; */
 
   @media (min-width: @tablet-width) {
-    width: 50%;
+   /*  width: 50%; */
     padding: 0;
     background-color: transparent;
+   /*  grid-row-start: 2;
+      grid-row-start: 3;
+      grid-column-start: 1;
+    grid-column-end: 2; */
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 32%;
   }
 }
 
 .download__header {
   color: @color-white;
-  display: flex;
+/*   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
+  background-image: url(../../img/back-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
 
   @media (min-width: @tablet-width) {
-    width: 50%;
+    background-image: none;
+   /*  width: 50%; */
+    grid-row-start: 1;
+      grid-row-end: -1;
+    grid-column-start: 1;
+      grid-column-end: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 40%;
+  }
+}
+
+.download__header::after {
+  content: "";
+  display: block;
+  margin: auto;
+  top: 10px;
+  left: 0px;
+  width: 320px;
+  height: 286px;
+  background-image: url(../../img/phone.png);
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -69,12 +145,48 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 100px;
     padding-right: 100px;
     font-size: 50px;
     line-height: 68px;
   }
 }
+
+/* .download__slogan::before {
+  content: "";
+  position: absolute;
+  top: 181px;
+  left: 0px;
+  width: 320px;
+  height: 286px;
+  background-image: url(../../img/phone.png);
+  background-repeat: no-repeat;
+}
+
+ @media (min-width: @tablet-width) {
+  .download__slogan::before {
+    content: "";
+    position: absolute;
+    top: 188px;
+    left: 0px;
+    width: 660px;
+    height: 545px;
+    background-image: url(../../img/phone-tablet.png);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download__slogan::before {
+    content: "";
+    position: absolute;
+    top: 208px;
+    left: 149px;
+    width: 1050px;
+    height: 645px;
+    background-image: url(../../img/phone-desktop.png);
+    background-repeat: no-repeat;
+  }
+} */
 
 .download__list {
   list-style: none;
@@ -90,6 +202,8 @@
 }
 
 .download__item {
+  display: flex;
+  align-items: center;
   padding: 0px 17px;
   cursor: pointer;
 
@@ -111,7 +225,10 @@
 }
 
 .download__button {
-  padding: 18px 42px;
+  text-decoration: none;
+  text-align: center;
+  width: 280px;
+  padding: 15px 0;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -133,9 +250,10 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 18px 52px;
+    padding: 15px 0px;
     margin-top: 30px;
     margin-bottom: 25px;
+    width: 300px;
   }
 }
 

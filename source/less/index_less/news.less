@@ -8,6 +8,9 @@
 
   @media (min-width: @desktop-width) {
     background-color: @color-grey;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
   }
 
   @media (max-width: @mobile-width-only) {
@@ -33,9 +36,38 @@
   }
 }
 
+.news__wrapper::before {
+  content: " ";
+  display: block;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  top: 10px;
+  left: 10px;
+  width: 238px;
+  height: 276px;
+  background-image: url(../../img/hours-24.png);
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @desktop-width) {
+  .news__wrapper::before {
+  content: " ";
+  display: block;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  top: 10px;
+  left: 10px;
+  width: 298px;
+  height: 345px;
+  background-image: url(../../img/hours-24-desktop.png);
+  background-repeat: no-repeat;
+  }
+}
+
 .news__study {
-  grid-column-start: 2;
-  grid-column-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
 }
 
 .news__title {
@@ -44,6 +76,10 @@
   font-weight: 700;
   margin: 0;
   padding-top: 48px;
+
+  @media (min-width: @desktop-width) {
+    line-height: 30px;
+    }
 }
 
 .news__text {

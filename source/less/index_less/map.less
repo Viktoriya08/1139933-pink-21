@@ -1,5 +1,18 @@
 
+
+.map {
+  position: relative;
+}
+
 .map__place {
   width: 100vw;
-  height: 100vh;
+  height: 200px;
+
+  @media (min-width: @tablet-width) {
+    height: 364px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 505px;
+  }
 }

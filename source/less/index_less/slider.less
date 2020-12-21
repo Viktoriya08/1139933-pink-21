@@ -1,6 +1,6 @@
 
 .slider__toggle {
-  margin: 10px;
+  margin: 7px;
   font-size: 6px;
   appearance: none;
   background: none;
@@ -9,7 +9,7 @@
   height: 6px;
   background-color: @color-basic;
   border-radius: 50%;
-  border: 2px solid @color-basic;
+  border: 3px solid @color-basic;
   opacity: 0.3;
   cursor: pointer;
 
@@ -20,7 +20,35 @@
   &--current {
     opacity: 1;
     background-color: transparent;
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.slider__left {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    background-color: transparent;
+    border: none;
+    background-image: url(../img/left-arrow.png);
+    background-repeat: no-repeat;
+    background-position: left 12px top 76px;
+    padding: 25px;
+  }
+}
+
+.slider__right {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    background-color: transparent;
+    border: none;
+    background-image: url(../img/right-arrow.png);
+    background-repeat: no-repeat;
+    background-position: left 12px top 76px;
+    padding: 25px;
   }
 }

@@ -54,7 +54,7 @@
         <header class="download__header">
             <h1 class="visually-hidden">Пинк это мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
             <p class="download__slogan">
-            Взгляните на жизнь<br>
+            Взгляните <br class="download__slogan-tablet"> на жизнь<br>
             иначе!
           </p>
         </header>
@@ -93,7 +93,7 @@
             мегаполиса?
           </p>
           <p class="advantages__text advantages__text--tablet">
-            Нам есть, что вам
+            Нам есть, что вам <br class="advantages__space-tablet">
             предложить!
           </p>
           <ul class="advantages__list">
@@ -118,10 +118,10 @@
           <h2 class="visually-hidden">Исследование о работе приложения</h2>
           <div class="news__study">
             <p class="news__title">
-              Эффект на 24 часа
+              Эффект <br class="news__title-tablet"> на 24 часа!
             </p>
             <p class="news__text">
-              Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+              Британские ученые провели исследования <br class="news__text-tablet"> и доказали, что положительный эффект <br class="news__text-tablet"> от использования приложения длится целые сутки!
             </p>
             <a class="news__more" href="#">Узнать больше об исследовании</a>
           </div>
@@ -132,12 +132,14 @@
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы</h2>
           <div class="reviews__list slider__list">
+            <button class="slider__left" aria-label="Листать влево" type="button"></button>
             <blockquote class="reviews__item slider__item">
-              <p class="reviews__author reviews__author--down">Николай Петров</p>
+              <p class="reviews__author">Николай Петров</p>
               <p class="reviews__about-author reviews__about-author--hidden">25 лет, водитель трамвая</p>
               <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
                 серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
             </blockquote>
+            <button class="slider__right" aria-label="Листать вправо" type="button"></button>
           </div>
           <p class="reviews__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--current" aria-label="Первый слайд" type="button"></button>
@@ -154,36 +156,36 @@
           <table class="tariffs__list slider__list-tariffs">
             <tr>
               <td class="tariffs__hidden"> </td>
-              <td class="tariffs__name">
+              <td class="tariffs__name tariffs__name--border-left">
                 <p class="tariffs-package">База</p>
                 <p class="tariffs-price">1,99 USD</p>
               </td>
-              <td class="tariffs__name">
-                <p class="tariffs-package">Стандарт</p>
+              <td class="tariffs__name tariffs__name--hit tariffs__name--border">
+                <p class="tariffs-package tariffs-hit">Стандарт</p>
                 <p class="tariffs-price">3,99 USD</p>
               </td>
-              <td class="tariffs__name">
+              <td class="tariffs__name tariffs__name--border-right">
                 <p class="tariffs-package">Анлим</p>
                 <p class="tariffs-price">9,99 USD</p>
               </td>
             </tr>
-            <tr>
-              <td class="tariffs-option">Розовый фильтр</td>
-              <td class="tariffs__mark tariffs__mark--have"></td>
-              <td class="tariffs__mark tariffs__mark--have"></td>
-              <td class="tariffs__mark tariffs__mark--have"></td>
+            <tr class="tariffs__option-line tariffs-option-border-radius">
+              <td class="tariffs-option ">Розовый фильтр</td>
+              <td class="tariffs__mark tariffs__mark--have tariffs-option-border" aria-label="Есть в тарифе"></td>
+              <td class="tariffs__mark tariffs__mark--have tariffs-option-border" aria-label="Есть в тарифе"></td>
+              <td class="tariffs__mark tariffs__mark--have" aria-label="Есть в тарифе"></td>
             </tr>
-            <tr>
-              <td class="tariffs-option">Смайлики</td>
-              <td class="tariffs__mark tariffs__mark--nohave"></td>
-              <td class="tariffs__mark tariffs__mark--have"></td>
-              <td class="tariffs__mark tariffs__mark--have"></td>
+            <tr class="tariffs__option-line">
+              <td class="tariffs-option tariffs-option-border">Смайлики</td>
+              <td class="tariffs__mark tariffs__mark--nohave tariffs-option-border" aria-label="Нет в тарифе"></td>
+              <td class="tariffs__mark tariffs__mark--have tariffs-option-border" aria-label="Есть в тарифе"></td>
+              <td class="tariffs__mark tariffs__mark--have" aria-label="Есть в тарифе"></td>
             </tr>
-            <tr>
+            <tr class="tariffs__option-line">
               <td class="tariffs-option">Комментарии</td>
-              <td class="tariffs__mark tariffs__mark--nohave"></td>
-              <td class="tariffs__mark tariffs__mark--nohave"></td>
-              <td class="tariffs__mark tariffs__mark--have"></td>
+              <td class="tariffs__mark tariffs__mark--nohave tariffs-option-border" aria-label="Нет в тарифе"></td>
+              <td class="tariffs__mark tariffs__mark--nohave tariffs-option-border" aria-label="Нет в тарифе"></td>
+              <td class="tariffs__mark tariffs__mark--have tariffs__name--border-bottun-right" aria-label="Есть в тарифе"></td>
             </tr>
           </table>
           </div>
@@ -195,7 +197,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts page-main__before-triangle">
         <div class="contacts__wrapper">
           <div class="contacts__header">
             <h2 class="visually-hidden">Контакты</h2>
@@ -221,10 +223,10 @@
         </div>
       </section>
 
-      <section class="map">
+      <section class="map page-main__triangle">
         <h2 class="visually-hidden">Карта</h2>
         <iframe class="map__place" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616006086!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1607258766746!5m2!1sru!2sru"
-        width="320"
+        width="100%"
         height="200"
         frameborder="0"
         style="border:0;"

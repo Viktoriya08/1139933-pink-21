@@ -18,6 +18,18 @@
   }
 }
 
+.news__title-tablet, .news__text-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .news__wrapper {
   padding: 54px 20px;
   margin: 0;
@@ -28,10 +40,9 @@
   }
 
   @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 2fr;
     width: 75%;
-    margin: 0 auto;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding: 67px 130px;
     max-width: 1200px;
   }
 }
@@ -45,7 +56,7 @@
   left: 10px;
   width: 238px;
   height: 276px;
-  background-image: url(../../img/hours-24.png);
+  background-image: url(../img/hours-24.png);
   background-repeat: no-repeat;
 }
 
@@ -59,15 +70,19 @@
   left: 10px;
   width: 298px;
   height: 345px;
-  background-image: url(../../img/hours-24-desktop.png);
+  background-image: url(../img/hours-24-desktop.png);
   background-repeat: no-repeat;
   }
 }
 
 .news__study {
-    grid-column-start: 2;
-    grid-column-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
 
+  @media (min-width: @desktop-width) {
+    padding-top: 54px;
+    padding-left: 72px;
+  }
 }
 
 .news__title {
@@ -75,7 +90,7 @@
   line-height: 36px;
   font-weight: 700;
   margin: 0;
-  padding-top: 48px;
+  padding-top: 42px;
 
   @media (min-width: @desktop-width) {
     line-height: 30px;
@@ -84,8 +99,13 @@
 
 .news__text {
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 27px;
+    padding-bottom: 31px;
+  }
 }
 
 .news__more {

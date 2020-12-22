@@ -1,6 +1,6 @@
 
 @media (min-width: @desktop-width) {
-  .main-nav__toggle {
+  .main-nav--nojs .main-nav__toggle {
     display: none;
   }
 }
@@ -24,7 +24,7 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: -80px;
+    top: -82px;
     right: 13px;
     z-index: 2;
     display: block;
@@ -60,7 +60,6 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-
   &::before,
   &::after {
     content: "";

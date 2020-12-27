@@ -4,18 +4,23 @@
   display: block;
   position: absolute;
   top: -1px;
-  left: 0px;
-  width: 100%;
-  height: 35px;
-  background-image: url(../img/triangle-white-map.png);
+  left: 0;
+  /*  width: 100%; */
+  /*   height: 35px; */
+  /*  background-image: url(../img/triangle-white-map.png);*/
   background-repeat: no-repeat;
   background-position: bottom;
+  border: transparent 0 solid;
+  border-bottom: none;
+  border-top: @color-white 35px solid;
+  border-left: transparent 50vw solid;
+  border-right: transparent 50vw solid;
 
   @media (min-width: @tablet-width) {
-    height: 59px;
+    border-top: @color-white 62px solid;
   }
 
   @media (min-width: @desktop-width) {
-    height: 105px;
+    border-top: @color-white 105px solid;
   }
 }

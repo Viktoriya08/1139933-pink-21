@@ -13,7 +13,8 @@
 @media (min-width: @desktop-width) {
   .site-list {
     display: flex;
-    justify-content: space-between;
+    /*     justify-content: space-between; */
+    flex-wrap: wrap;
     line-height: 18px;
     font-weight: 400;
   }
@@ -30,7 +31,9 @@
     text-transform: none;
     padding: 0;
     padding-left: 79px;
+    /*
     padding-top: 12px;
+    padding-bottom: 12px; */
   }
 }
 
@@ -47,6 +50,11 @@
   &:active {
     color: @color-hit;
     opacity: 0.3;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 18px;
+    padding-bottom: 12px;
   }
 }
 

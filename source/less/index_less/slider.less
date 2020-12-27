@@ -14,7 +14,11 @@
   cursor: pointer;
 
   &:hover {
-    transform: scale(1.3);
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 
   &--current {
@@ -33,9 +37,18 @@
     background-color: transparent;
     border: none;
     background-image: url(../img/left-arrow.png);
+    opacity: 0.3;
     background-repeat: no-repeat;
     background-position: left 12px top 76px;
     padding: 25px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 }
 
@@ -47,8 +60,17 @@
     background-color: transparent;
     border: none;
     background-image: url(../img/right-arrow.png);
+    opacity: 0.3;
     background-repeat: no-repeat;
     background-position: left 12px top 76px;
     padding: 25px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 }

@@ -18,7 +18,8 @@
   }
 }
 
-.news__title-tablet, .news__text-tablet {
+.news__title-tablet,
+.news__text-tablet {
   display: none;
 
   @media (min-width: @tablet-width) {
@@ -27,6 +28,14 @@
 
   @media (min-width: @desktop-width) {
     display: none;
+  }
+}
+
+.news__text-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
 
@@ -63,16 +72,16 @@
 
 @media (min-width: @desktop-width) {
   .news__wrapper::before {
-  content: " ";
-  display: block;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  top: 10px;
-  left: 10px;
-  width: 298px;
-  height: 345px;
-  background-image: url(../img/hours-24-desktop.png);
-  background-repeat: no-repeat;
+    content: " ";
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    top: 10px;
+    left: 10px;
+    width: 298px;
+    height: 345px;
+    background-image: url(../img/hours-24-desktop.png);
+    background-repeat: no-repeat;
   }
 }
 
@@ -95,7 +104,7 @@
 
   @media (min-width: @desktop-width) {
     line-height: 30px;
-    }
+  }
 }
 
 .news__text {

@@ -1,5 +1,10 @@
 
 .site-list {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -7,12 +12,53 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
-    width: 490px;
     display: flex;
-    justify-content: space-between;
+    /*     justify-content: space-between; */
+    flex-wrap: wrap;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}
+
+.site-list__item {
+  padding: 12px 21px;
+  padding-bottom: 13px;
+  border-top: 1px solid @color-darkblue-border;
+  border-bottom: 1px solid @color-black;
+
+  @media (min-width: @desktop-width) {
+    border: none;
+    text-transform: none;
+    padding: 0;
+    padding-left: 79px;
+    /*
+    padding-top: 12px;
+    padding-bottom: 12px; */
   }
 }
 
 .site-list a {
   color: @color-white;
+  position: relative;
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    color: @color-hit;
+  }
+
+  &:active {
+    color: @color-hit;
+    opacity: 0.3;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 18px;
+    padding-bottom: 12px;
+  }
+}
+
+.site-list__item--active {
+  display: inline-block;
+  border-bottom: solid 2px;  /*надо ли линию тоже с ховером делать?*/
 }

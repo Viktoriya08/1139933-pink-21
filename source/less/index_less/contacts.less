@@ -1,10 +1,12 @@
+/* .contacts {
+  margin-bottom: -10px;
+} */
 
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 18px 20px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -13,9 +15,9 @@
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
-    padding-left: 130px;
-    padding-right: 130px;
-    max-width: 1200px;
+    /*     padding-left: 130px;
+    padding-right: 130px; */
+    max-width: 940px;
   }
 }
 
@@ -27,17 +29,36 @@
 }
 
 .contacts__come {
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 22px;
+  }
+
   @media (min-width: @desktop-width) {
     min-width: auto;
+    margin: 0;
   }
 }
-
 
 .contacts__main-text {
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
   text-align: center;
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 55px;
+    margin-top: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    margin-top: 40px;
+  }
 }
 
 .contacts__text {
@@ -45,6 +66,12 @@
   line-height: 24px;
   font-weight: 700;
   text-align: center;
+  margin: 0;
+  padding-top: 15px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 23px;
+  }
 }
 
 .contacts__data {
@@ -54,4 +81,52 @@
   text-align: center;
   color: @color-hit;
   display: block;
+  margin: 0;
+  text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 24px;
+  }
+}
+
+.contacts__data--line {
+  &:hover {
+    color: @color-basic;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: @color-basic;
+    opacity: 0.3;
+    text-decoration: none;
+  }
+}
+
+.contacts__call {
+  margin-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    flex-basis: 48%;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-basis: 32%;
+  }
+}
+
+.contacts__write {
+  margin-bottom: 8px;
+
+  @media (min-width: @tablet-width) {
+    flex-basis: 48%;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+    flex-basis: 32%;
+  }
 }

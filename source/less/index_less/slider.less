@@ -1,0 +1,76 @@
+
+.slider__toggle {
+  margin: 7px;
+  font-size: 6px;
+  appearance: none;
+  background: none;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: @color-basic;
+  border-radius: 50%;
+  border: 3px solid @color-basic;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &--current {
+    opacity: 1;
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.slider__left {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    background-color: transparent;
+    border: none;
+    background-image: url(../img/left-arrow.png);
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    background-position: left 12px top 76px;
+    padding: 25px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+}
+
+.slider__right {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    background-color: transparent;
+    border: none;
+    background-image: url(../img/right-arrow.png);
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    background-position: left 12px top 76px;
+    padding: 25px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+}

@@ -1,19 +1,19 @@
 
 .page-footer {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 35px 20px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 26px 20px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
-    padding-left: 130px;
-    padding-right: 130px;
-    max-width: 1200px;
+    padding: 60px 130px;
+    max-width: 940px;
   }
 }
 
@@ -25,6 +25,133 @@
   justify-content: center;
 }
 
+.page-footer__icon {
+  width: 147px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 25%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 17%;
+  }
+}
+
+.page-footer__icon-block {
+  display: block;
+  height: 100%;
+  width: min-content;
+}
+
+.page-footer__icon-block:hover path {
+  fill: @color-hit;
+}
+
+.page-footer__icon-block:active path {
+  opacity: 0.3;
+}
+
 .social__item {
-  padding: 0 7;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 48px;
+  height: 48px;
+  border: solid 3px @color-grey;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    border: solid 3px @color-basic;
+  }
+
+  &:active {
+    border: solid 3px @color-basic;
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 5px;
+  margin-right: 3px;
+  }
+}
+
+.social__link {
+  display: block;
+  /*   margin-top: 12px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 16px;
+  } */
+}
+
+.page-footer__social {
+  margin: 31px 0;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /*  min-width: 170px; */
+
+  @media (min-width: @tablet-width) {
+    padding-top: 12px;
+    justify-content: flex-end;
+    width: 25%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 12px;
+    width: 17%;
+  }
+}
+
+.page-footer__text {
+  margin: 6px 8px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    margin: 7px 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    margin: 7px 12px;
+  }
+}
+
+.page-footer__link {
+  display: block;
+  text-decoration: none;
+  height: 100%;
+  width: min-content;
+  margin: 0px 7px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.page-footer__link:hover path {
+  fill: @color-basic;
+
+  &:active path {
+    fill: @color-basic;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__link:active path {
+  opacity: 0.3;
 }

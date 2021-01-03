@@ -2,8 +2,7 @@
 .user {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px 20px 24px;
   grid-column-start: 1;
   grid-column-end: 3;
 
@@ -14,6 +13,8 @@
   @media (min-width: @desktop-width) {
     grid-column-start: 1;
     grid-column-end: 2;
+    text-align: end;
+    padding: 20px 20px 16px;
   }
 }
 
@@ -22,6 +23,25 @@
   line-height: 30px;
   font-weight: 400;
   color: @color-hit;
+  text-transform: uppercase;
+  padding-left: 22px;
+  padding-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 31px;
+    padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 11px;
+    padding-bottom: 37px;
+  }
+}
+
+.user__name-br {
+  @media (min-width: 400px) {
+    display: none;
+  }
 }
 
 .user__entryfield {
@@ -29,4 +49,42 @@
   line-height: 30px;
   font-weight: 400;
   text-transform: none;
+  border-color: @color-button-disabled;
+  min-width: 243px;
+  padding: 15px;
+  padding-left: 18px;
+  margin-top: 6px;
+  margin-left: -21px;
+  border-radius: 3px;
+
+  @media (min-width: 400px) {
+    margin-left: 0;
+  }
+
+  &:hover {
+    border-color: @color-basic;
+  }
+
+  &:active {
+    border-color: @color-hit;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 15px;
+    min-width: 78%;
+    padding: 14px;
+    padding-left: 19px;
+
+    &--long {
+      min-width: 85%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 56%;
+
+    &--long {
+      min-width: 63%;
+    }
+  }
 }

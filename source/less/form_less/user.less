@@ -49,7 +49,8 @@
   line-height: 30px;
   font-weight: 400;
   text-transform: none;
-  border-color: @color-button-disabled;
+  font-family: "Open Sans", "Arial", sans-serif;
+  border: 2px solid @color-button-disabled;
   min-width: 243px;
   padding: 15px;
   padding-left: 18px;
@@ -57,16 +58,17 @@
   margin-left: -21px;
   border-radius: 3px;
 
+  &:hover {
+    border: 2px solid @color-basic;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid @color-hit;
+  }
+
   @media (min-width: 400px) {
     margin-left: 0;
-  }
-
-  &:hover {
-    border-color: @color-basic;
-  }
-
-  &:active {
-    border-color: @color-hit;
   }
 
   @media (min-width: @tablet-width) {
@@ -88,3 +90,7 @@
     }
   }
 }
+
+/* .user__name:focus .user__entryfield {
+  border-color: @color-hit;
+} */

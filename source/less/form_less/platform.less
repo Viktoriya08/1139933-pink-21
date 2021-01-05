@@ -54,7 +54,7 @@
   padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 0;
+    /* padding-bottom: 0; */
     padding: 0 30px;
   }
 }
@@ -104,6 +104,10 @@
   border: 2px solid @color-hit;
 }
 
+.participant__radio-input:focus + label {
+  outline: auto;
+}
+
 .participant__radio-input:checked + label::after {
   content: "";
   position: absolute;
@@ -120,7 +124,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: 59px;
+    top: 55px;
     left: 85px;
   }
 }

@@ -31,13 +31,12 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 25px;
+    padding-bottom: 24px;
   }
 
-  /*  @media (min-width: @desktop-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-  } */
+  @media (min-width: @desktop-width) {
+    padding-bottom: 37px;
+  }
 }
 
 .journey__fieldset-desktop {
@@ -60,7 +59,7 @@
   padding: 20px 28px;
 
   @media (min-width: @desktop-width) {
-    padding: 17px 32px;
+    padding: 18px 32px;
   }
 }
 
@@ -100,7 +99,7 @@
 .journey__input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -60px;
+  left: -57px;
   top: -4px;
   width: 35px;
   height: 35px;
@@ -117,6 +116,10 @@
   border: 2px solid @color-hit;
 }
 
+.journey__input-checkbox:focus + label {
+  outline: auto;
+}
+
 .journey__input-checkbox:checked + label::after {
   content: "";
   position: absolute;
@@ -124,7 +127,7 @@
   left: -51px;
   width: 22px;
   height: 16px;
-  background-image: url(../img/tick.png);
+  background-image: url("../img/tick.png");
   background-repeat: no-repeat;
   background-size: contain;
 }

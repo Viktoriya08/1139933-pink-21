@@ -1,31 +1,66 @@
 
 .journey {
   background-color: @color-white;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px 20px 14px;
   grid-column-start: 1;
   grid-column-end: 3;
 
   @media (max-width: @mobile-width-only) {
     background-color: @color-grey;
   }
+
+  @media (min-width: @tablet-width) {
+    padding: 34px 20px 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .journey__wraper-desktop {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  padding: 0;
+  border: 2px solid @color-button-disabled;
+  border-radius: 3px;
 
   @media (max-width: @mobile-width-only) {
     border: 0;
   }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 37px;
+  }
+}
+
+.journey__fieldset-desktop {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .journey__title {
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: @color-hit;
   text-align: center;
+  padding: 20px 28px;
+
+  @media (min-width: @desktop-width) {
+    padding: 18px 32px;
+  }
 }
 
 .journey__adventures {
@@ -33,4 +68,66 @@
   line-height: 30px;
   font-weight: 400;
   text-transform: none;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  margin: 22px 0 31px 58px;
+
+  @media (min-width: @tablet-width) {
+    margin: 29px 30px 24px 116px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 29px 0 24px 110px;
+
+    &--third-column {
+      grid-column-start: 3;
+      grid-row-start: 1;
+    }
+
+    &--second-line {
+      grid-row-start: 2;
+    }
+
+    &--second-column {
+      grid-column-start: 2;
+    }
+  }
+}
+
+.journey__input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -57px;
+  top: -4px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid @color-button-disabled;
+  background-color: @color-white;
+  border-radius: 3px;
+}
+
+.journey__input-checkbox + label:hover::before {
+  border: 2px solid @color-basic;
+}
+
+.journey__input-checkbox + label:active::before {
+  border: 2px solid @color-hit;
+}
+
+.journey__input-checkbox:focus + label {
+  outline: auto;
+}
+
+.journey__input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -51px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/tick.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }

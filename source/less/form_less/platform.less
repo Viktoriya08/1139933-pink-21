@@ -6,32 +6,125 @@
   text-align: center;
   background-color: @color-grey;
   color: @color-hit;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 38px 20px 28px;
   grid-column-start: 1;
   grid-column-end: 3;
 
   @media (min-width: @tablet-width) {
-    order: -1;
+    order: -2;
     background-color: @color-white;
+    padding: 21px 20px 28px;
   }
 
   @media (min-width: @desktop-width) {
     grid-column-start: 2;
     grid-column-end: 3;
+    max-width: 537px;
   }
 }
 
 .participant__wraper-desktop {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px solid @color-button-disabled;
+  border-radius: 3px;
+
   @media (max-width: @mobile-width-only) {
     border: 0;
   }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 79%;
+  }
 }
 
-.participant__title {
+.participant__platform-title {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: @color-hit;
   text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    /* padding-bottom: 0; */
+    padding: 0 30px;
+  }
+}
+
+.participant__app {
+  padding: 24px 0 20px 70px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 47px 0 0 116px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 48px 0 0 132px;
+  }
+}
+
+.participant__radio-input + label::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 15px;
+  width: 39px;
+  height: 39px;
+  border: 2px solid @color-button-disabled;
+  background-color: @color-white;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    left: 55px;
+    top: 41px;
+    width: 37px;
+    height: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 72px;
+    top: 43px;
+  }
+}
+
+.participant__radio-input + label:hover::before {
+  border: 2px solid @color-basic;
+}
+
+.participant__radio-input + label:active::before {
+  border: 2px solid @color-hit;
+}
+
+.participant__radio-input:focus + label {
+  outline: auto;
+}
+
+.participant__radio-input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 11px;
+  width: 14px;
+  height: 14px;
+  background-color: @color-hit;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    top: 55px;
+    left: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 55px;
+    left: 85px;
+  }
 }

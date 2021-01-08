@@ -7,27 +7,39 @@
   font-weight: 400;
   text-align: center;
   text-transform: none;
+  padding: 13px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    padding: 30px 0;
+  }
 
   @media (min-width: @desktop-width) {
     margin: auto;
     max-width: 940px;
+    padding: 30px 0 66px;
   }
 }
 
 .change__wrapper {
   background-color: @color-grey;
   padding: 0 20px;
+  margin-top: 29px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 39px;
+    margin-top: 41px;
+    padding: 56px 20px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
-    margin: auto;
+    padding: 56px 0 60px;
+    margin: 0 auto 34px;
     max-width: 940px;
+    grid-column-gap: 0;
   }
 }
 
@@ -36,34 +48,101 @@
   flex-direction: column;
   grid-row-start: 1;
   grid-row-end: 3;
+  padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 31px;
+    padding-top: 0;
+    display: block;
+    text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
 }
 
 .change__foto {
   max-width: 280px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
-}
-
-.change__foto-scale {
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-gap: 10px;
 
   @media (min-width: @tablet-width) {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-row-gap: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-gap: 33px;
   }
 }
 
+.change__foto-button path {
+  fill: @color-basic;
+  opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    fill: @color-hit;
+    opacity: 1;
+  }
+}
+
+.change__foto-button--disabled:hover {
+  opacity: 0.5;
+
+  @media (min-width: @tablet-width) {
+    opacity: 1;
+  }
+}
+
+.change__foto-button--active path {
+  fill: @color-hit;
+  opacity: 1;
+}
+
 .change__foto-button--fill {
+  background-color: @color-grey;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  padding: 6px;
+  margin-top: 41px;
+
   @media (min-width: @tablet-width) {
     grid-row-start: 2;
+    padding: 0;
+    margin-top: 0;
   }
 }
 
 .change__foto-button--colour {
+  /* background-image: url("../img/contrast.svg"); */
+  background-color: @color-grey;
+  text-align: start;
+  border: none;
+  padding: 6px;
+  margin-top: 41px;
+
   @media (min-width: @tablet-width) {
     grid-row-start: 3;
+    padding: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+}
+
+.change__foto-button--crop {
+  /* background-image: url("../img/crop.svg"); */
+  background-color: @color-grey;
+  text-align: right;
+  border: none;
+  padding: 6px;
+  margin-top: 41px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-top: 0;
+    text-align: center;
   }
 }
 
@@ -71,8 +150,205 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  padding: 40px 0 34px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: start;
+  }
 }
+
+.change__foto-scale {
+  position: relative;
+  height: 36px;
+  padding: 24px 10px 0;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.change__foto-scale .toggle {
+  position: absolute;
+  right: -46px;
+  top: 18px;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: 2px solid @color-hit;
+  background-color: @color-white;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    &--crop {
+      right: 48px;
+    }
+
+    &--fill {
+      left: 35px;
+    }
+
+    &--colour {
+      right: 98px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--crop {
+      left: 78px;
+    }
+
+    &--colour {
+      right: 35px;
+    }
+
+    &--fill {
+      left: 256px;
+    }
+  }
+}
+
+.change__foto-scale .toggle:hover{
+  transform:scale(1.2);
+}
+
+.change__foto-scale .toggle:active{
+  background-color: @color-hit;
+}
+
+.change__foto-scale .scale {
+  height: 2px;
+  margin-bottom: 33px;
+  background-color: @color-basic;
+}
+
+.scale::after {
+  content: "";
+  position: absolute;
+  background-color: @color-basic;
+  opacity: 0.1;
+  display: block;
+  top: 62px;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  height: 1px;
+
+  @media (min-width: @tablet-width) {
+    width: 275px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 410px;
+    right: -104px;
+  }
+}
+
+.change__foto-scale .bar {
+  height: 2px;
+  width: 258px;
+  background-color: @color-basic;
+
+  @media (min-width: @tablet-width) {
+    width: 202px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 295px;
+  }
+}
+
+.change__foto-scale-crop {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+  }
+}
+
+.change__foto-scale-fill {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 202px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+  }
+}
+
+.change__foto-scale-colour {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 202px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+  }
+}
+
+/* .price-controls {
+  border: 2px solid @color-white;
+  /* text-align: center; */
+/*   border-radius: 2px;
+  padding: 4px;
+} */
+
+/* .price-controls .min-price {
+  padding-left: 62px;
+  border-right: 2px solid @color-white;
+} */
 
 .change__send-button {
   width: 280px;
+  color: @color-hit;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 4px solid @color-hit;
+  border-radius: 30px;
+  padding: 15px;
+  margin-bottom: 10px;
+
+  &:hover {
+    background-color: @color-hit;
+    color: @color-white;
+  }
+
+  &:active {
+    color: @color-hit-activ;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+    margin: 0 44px 0 0;
+  }
+}
+
+.change__send-button--canceling {
+  color: @color-basic;
+  border: 4px solid @color-basic;
+  opacity: 0.1;
+
+  &:hover {
+    color: @color-basic;
+    background-color: transparent;
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: @color-basic;
+    opacity: 0.3;
+    color: @color-button-disabled;
+  }
 }

@@ -14,7 +14,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/desktop/logotype-white-desktop.svg">
               <source media="(min-width: 660px)" srcset="./img/tablet/logotype-white-tablet.svg">
-            <img src="./img/logo-mobile.svg" width="74" height="23" alt="Пинк логотип">
+              <img src="./img/logo-mobile.svg" width="74" height="23" alt="Пинк логотип">
             </picture>
           </a>
           <nav class="main-nav main-nav--closed main-nav--nojs"> <!-- main-nav--opened  closed -->
@@ -63,7 +63,14 @@
                 </p>
                 <div class="users-content__wrapper">
                     <a href="#" alt="Открыть полный размер фото">
-                    <img class="users-content__foto users-content__foto--biger" src="./img/panorama-desktop.jpg" width="100%" height="137" alt="Фото пользователя" />
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="./img/desktop/panorama-desktop-wp.webp 1x, ./img/desktop/panorama-desktop-wp@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 660px)" srcset="./img/tablet/panorama-tablet-wp.webp 1x, ./img/tablet/panorama-tablet-wp@2x.webp 2x">
+                      <source type="image/webp" srcset="./img/mobile/panorama-mobile-wp.webp 1x, ./img/mobile/panorama-mobile-wp@2x.webp 2x">
+                      <source media="(min-width: 1200px)" srcset="./img/desktop/panorama-desktop.jpg 1x, ./img/desktop/panorama-desktop@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="./img/tablet/panorama-tablet.jpg 1x, ./img/tablet/panorama-tablet@2x.jpg 2x">
+                      <img class="users-content__foto users-content__foto--biger" src="./img/mobile/panorama-mobile.jpg" srcset="./img/mobile/panorama-mobile@2x.jpg 2x" width="100%" height="137" alt="Фото пользователя" />
+                    </picture>
                     </a>
                     <div class="users-content__user users-content__user--userday">
                         <p class="users-content__user-title users-content__user-title--userday"><span class="users-content__name">Анна</span> (5 минут назад)</p>
@@ -80,7 +87,14 @@
                   <div class="users-content__tablet-desktop">
                     <div class="users-content__wrapper">
                         <a href="#" alt="Открыть полный размер фото">
-                          <img class="users-content__foto" src="./img/photo-1-desktop.jpg" width="100%" height="180" alt="Фото пользователя" />
+                          <picture>
+                            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/desktop/photo-1-desktop-wp.webp 1x, ./img/desktop/photo-1-desktop-wp@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 660px)" srcset="./img/tablet/photo-1-tablet-wp.webp 1x, ./img/tablet/photo-1-tablet-wp@2x.webp 2x">
+                            <source type="image/webp" srcset="./img/mobile/photo-1-mobile-wp.webp 1x, ./img/mobile/photo-1-mobile-wp@2x.webp 2x">
+                            <source media="(min-width: 1200px)" srcset="./img/desktop/photo-1-desktop.jpg 1x, ./img/desktop/photo-1-desktop@2x.jpg 2x">
+                            <source media="(min-width: 660px)" srcset="./img/tablet/photo-1-tablet.jpg 1x, ./img/tablet/photo-1-tablet@2x.jpg">
+                            <img class="users-content__foto" src="./img/mobile/photo-1-mobile.jpg" srcset="./img/mobile/photo-1-mobile@2x.jpg 2x" width="100%" height="180" alt="Фото пользователя" />
+                          </picture>
                         </a>
                         <div class="users-content__user">
                             <p class="users-content__user-title"><span class="users-content__name">Левон</span> (5 часов назад)</p>
@@ -97,7 +111,14 @@
 
                     <div class="users-content__wrapper">
                       <a href="#" alt="Открыть полный размер фото">
-                        <img class="users-content__foto" src="./img/photo-2-desktop.jpg" width="280" height="180" alt="Фото пользователя" />
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1200px)" srcset="./img/desktop/photo-2-desktop-wp.webp 1x, ./img/desktop/photo-2-desktop-wp@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 660px)" srcset="./img/tablet/photo-2-tablet-wp.webp 1x, ./img/tablet/photo-2-tablet-wp@2x.webp 2x">
+                          <source type="image/webp" srcset="./img/mobile/photo-2-mobile-wp.webp 1x, ./img/mobile/photo-2-mobile-wp@2x.webp 2x">
+                          <source media="(min-width: 1200px)" srcset="./img/desktop/photo-2-desktop.jpg 1x, ./img/desktop/photo-2-desktop@2x.jpg 2x">
+                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-2-tablet.jpg 1x, ./img/tablet/photo-2-tablet@2x.jpg">
+                          <img class="users-content__foto" src="./img/mobile/photo-2-mobile.jpg" srcset="./img/mobile/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя" />
+                        </picture>
                       </a>
                         <div class="users-content__user">
                             <p class="users-content__user-title"><span class="users-content__name">Антон</span> (12 часов назад)</p>
@@ -114,7 +135,14 @@
 
                     <div class="users-content__wrapper">
                       <a href="#" alt="Открыть полный размер фото">
-                        <img class="users-content__foto" src="./img/photo-3-desktop.jpg" width="280" height="180" alt="Фото пользователя" />
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1200px)" srcset="./img/desktop/photo-3-desktop-wp.webp 1x, ./img/desktop/photo-3-desktop-wp@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 660px)" srcset="./img/tablet/photo-3-tablet-wp.webp 1x, ./img/tablet/photo-3-tablet-wp@2x.webp 2x">
+                          <source type="image/webp" srcset="./img/mobile/photo-3-mobile-wp.webp 1x, ./img/mobile/photo-3-mobile-wp@2x.webp 2x">
+                          <source media="(min-width: 1200px)" srcset="./img/desktop/photo-3-desktop.jpg 1x, ./img/desktop/photo-3-desktop@2x.jpg 2x">
+                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-3-tablet.jpg 1x, ./img/tablet/photo-3-tablet@2x.jpg">
+                          <img class="users-content__foto" src="./img/mobile/photo-3-mobile.jpg" srcset="./img/mobile/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя" />
+                        </picture>
                       </a>
                         <div class="users-content__user">
                             <p class="users-content__user-title"><span class="users-content__name">Борис</span> (20 часов назад)</p>
@@ -131,7 +159,14 @@
 
                     <div class="users-content__wrapper">
                       <a href="#" alt="Открыть полный размер фото">
-                        <img class="users-content__foto" src="./img/photo-4-desktop.jpg" width="280" height="180" alt="Фото пользователя" />
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1200px)" srcset="./img/desktop/photo-4-desktop-wp.webp 1x, ./img/desktop/photo-4-desktop-wp@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 660px)" srcset="./img/tablet/photo-4-tablet-wp.webp 1x, ./img/tablet/photo-4-tablet-wp@2x.webp 2x">
+                          <source type="image/webp" srcset="./img/mobile/photo-4-mobile-wp.webp 1x, ./img/mobile/photo-4-mobile-wp@2x.webp 2x">
+                          <source media="(min-width: 1200px)" srcset="./img/desktop/photo-4-desktop.jpg 1x, ./img/desktop/photo-4-desktop@2x.jpg 2x">
+                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-4-tablet.jpg 1x, ./img/tablet/photo-4-tablet@2x.jpg">
+                          <img class="users-content__foto" src="./img/mobile/photo-4-mobile.jpg" srcset="./img/mobile/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя" />
+                        </picture>
                       </a>
                         <div class="users-content__user">
                             <p class="users-content__user-title"><span class="users-content__name">Сергей</span> (25 часов назад)</p>
@@ -148,8 +183,15 @@
 
                     <div class="users-content__wrapper">
                       <a href="#" alt="Открыть полный размер фото">
-                        <img class="users-content__foto" src="./img/photo-5-desktop.jpg" width="280" height="180" alt="Фото пользователя" />
-                      </a>
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1200px)" srcset="./img/desktop/photo-5-desktop-wp.webp 1x, ./img/desktop/photo-5-desktop-wp@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 660px)" srcset="./img/tablet/photo-5-tablet-wp.webp 1x, ./img/tablet/photo-5-tablet-wp@2x.webp 2x">
+                          <source type="image/webp" srcset="./img/mobile/photo-5-mobile-wp.webp 1x, ./img/mobile/photo-5-mobile-wp@2x.webp 2x">
+                          <source media="(min-width: 1200px)" srcset="./img/desktop/photo-5-desktop.jpg 1x, ./img/desktop/photo-5-desktop@2x.jpg 2x">
+                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-5-tablet.jpg 1x, ./img/tablet/photo-5-tablet@2x.jpg">
+                          <img class="users-content__foto" src="./img/mobile/photo-5-mobile.jpg" srcset="./img/mobile/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя" />
+                        </picture>
+                        </a>
                         <div class="users-content__user">
                             <p class="users-content__user-title"><span class="users-content__name">Максим</span> (40 часов назад)</p>
                             <p class="users-content__text">
@@ -165,7 +207,14 @@
 
                     <div class="users-content__wrapper">
                       <a href="#" alt="Открыть полный размер фото">
-                        <img class="users-content__foto" src="./img/photo-6-desktop.jpg" width="280" height="180" alt="Фото пользователя" />
+                        <picture>
+                          <source type="image/webp" media="(min-width: 1200px)" srcset="./img/desktop/photo-6-desktop-wp.webp 1x, ./img/desktop/photo-6-desktop-wp@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 660px)" srcset="./img/tablet/photo-6-tablet-wp.webp 1x, ./img/tablet/photo-6-tablet-wp@2x.webp 2x">
+                          <source type="image/webp" srcset="./img/mobile/photo-6-mobile-wp.webp 1x, ./img/mobile/photo-6-mobile-wp@2x.webp 2x">
+                          <source media="(min-width: 1200px)" srcset="./img/desktop/photo-6-desktop.jpg 1x, ./img/desktop/photo-6-desktop@2x.jpg 2x">
+                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-6-tablet.jpg 1x, ./img/tablet/photo-6-tablet@2x.jpg">
+                          <img class="users-content__foto" src="./img/mobile/photo-6-mobile.jpg" srcset="./img/mobile/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя" />
+                        </picture>
                       </a>
                         <div class="users-content__user">
                             <p class="users-content__user-title"><span class="users-content__name">Надежда</span> (45 часов назад)</p>
@@ -193,8 +242,10 @@
                       <input class="visually-hidden" type="file" name="foro-download" id="foro-download" alt="Загрузить фото"/>
                       <label class="change__download-foto" for="foro-download">
                         <picture>
-                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-7-tablet.jpg">
-                          <img class="change__img" src="./img/photo-7-desktop.jpg" width="280" height="374" alt="Фото для загрузки в ленту пользователей" />
+                          <source type="image/webp" media="(min-width: 660px)" srcset="./img/tablet/photo-7-tablet-wp.webp 1x, ./img/tablet/photo-7-tablet-wp@2x.webp 2x">
+                          <source type="image/webp" srcset="./img/mobile/photo-7-mobile-wp.webp 1x, ./img/mobile/photo-7-mobile-wp@2x.webp 2x">
+                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-7-tablet.jpg 1x, ./img/tablet/photo-7-tablet@2x.jpg">
+                          <img class="change__img" src="./img/mobile/photo-7-mobile.jpg" srcset="./img/mobile/photo-7-mobile@2x.jpg 2x" width="280" height="374" alt="Фото для загрузки в ленту пользователей" />
                         </picture>
                       </label>
                     </div>
@@ -234,7 +285,7 @@
                       </div>
                   </div>
                     <div class="change__send">
-                        <button class="change__send-button" type="button">Запостить</button>
+                        <button class="change__send-button" type="submit">Запостить</button>
                         <button class="change__send-button change__send-button--canceling" type="reset">Отмена</button>
                     </div>
                 </form>

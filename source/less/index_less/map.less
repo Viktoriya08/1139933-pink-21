@@ -2,16 +2,20 @@
 
 .map {
   position: relative;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 18px;
+  }
 }
 
 .map__place {
   height: 200px;
 
   @media (min-width: @tablet-width) {
-    height: 364px;
+    height: 375px;
   }
 
   @media (min-width: @desktop-width) {
-    height: 505px;
+    height: 498px;
   }
 }

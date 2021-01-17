@@ -1,8 +1,8 @@
-/* .contacts {
-  margin-bottom: -10px;
-} */
+.contacts-main {
+  padding: 20px 20px 5px;
+}
 
-.contacts__wrapper {
+.contacts-main__wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -11,6 +11,7 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,14 +22,14 @@
   }
 }
 
-.contacts__header,
-.contacts__come {
+.contacts-main__header,
+.contacts-main__come {
   @media (min-width: @tablet-width) {
     min-width: 100%;
   }
 }
 
-.contacts__come {
+.contacts-main__come {
   margin-bottom: 16px;
 
   @media (min-width: @tablet-width) {
@@ -41,7 +42,7 @@
   }
 }
 
-.contacts__main-text {
+.contacts-main__main-text {
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
@@ -61,7 +62,7 @@
   }
 }
 
-.contacts__text {
+.contacts-main__text {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -69,12 +70,16 @@
   margin: 0;
   padding-top: 15px;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 13px;
+  }
+
   @media (min-width: @desktop-width) {
-    padding-top: 23px;
+    padding-top: 18px;
   }
 }
 
-.contacts__data {
+.contacts-main__data {
   font-size: 24px;
   line-height: 32px;
   font-weight: 300;
@@ -93,7 +98,7 @@
   }
 }
 
-.contacts__data--line {
+.contacts-main__data--line {
   &:hover {
     color: @color-basic;
     text-decoration: underline;
@@ -106,7 +111,7 @@
   }
 }
 
-.contacts__call {
+.contacts-main__call {
   margin-bottom: 5px;
 
   @media (min-width: @tablet-width) {
@@ -118,7 +123,7 @@
   }
 }
 
-.contacts__write {
+.contacts-main__write {
   margin-bottom: 8px;
 
   @media (min-width: @tablet-width) {

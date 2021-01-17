@@ -12,14 +12,27 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/mobile/back-mobile@2x.jpg");
+    background-size: cover;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/back-tablet.jpg");
     min-height: 437px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     min-height: 395px;
     background-image: url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desktop/back-desktop@2x.jpg");
+    }
   }
 }
 
@@ -50,7 +63,7 @@
   font-weight: 400;
   text-align: center;
   text-transform: none;
-  padding: 44px 0 50px;
+  padding: 46px 0 50px;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
@@ -206,7 +219,7 @@
 
 .users-content__user-title {
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   font-weight: 300;
   text-transform: uppercase;
@@ -230,10 +243,7 @@
 .users-content__name {
   font-weight: 700;
   text-transform: none;
-
-  @media (min-width: @tablet-width) {
-    font-size: 14px;
-  }
+  font-size: 14px;
 }
 
 .users-content__text {

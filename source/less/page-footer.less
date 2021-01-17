@@ -53,6 +53,22 @@
   opacity: 0.3;
 }
 
+.page-footer__icon-block--desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.page-footer__icon-block--tablet {
+  display: block;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .social__item {
   margin-left: 4px;
   margin-right: 4px;
@@ -94,7 +110,7 @@
 }
 
 .page-footer__social {
-  margin: 37px 0;
+  margin: 34px 0;
   margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {

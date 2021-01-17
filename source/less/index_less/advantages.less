@@ -6,7 +6,7 @@
   background-size: cover;
 
   @media (min-width: @tablet-width) {
-    background-position: 0 186px;
+    background-position: 0 190px;
   }
 
   @media (min-width: @desktop-width) {
@@ -15,8 +15,7 @@
 }
 
 .advantages__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 2px 20px 0;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -89,7 +88,7 @@
     grid-column-start: 2;
     grid-column-end: 3;
     text-align: start;
-    margin-top: 86px;
+    margin-top: 89px;
     margin-bottom: 0;
   }
 
@@ -147,6 +146,11 @@
   background-repeat: no-repeat;
   margin: auto;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile/iphone-3@2x.png");
+    background-size: cover;
+  }
+
   @media (min-width: @tablet-width) {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -159,6 +163,11 @@
     background-position: top;
     margin: 0;
     margin-top: 34px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet/iphone-3-tablet.png");
+      background-size: cover;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -179,6 +188,11 @@
     background-image: url("../img/iphone-1-desktop.png");
     background-position: top center;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desktop/iphone-1-desktop@2x.png");
+      background-size: cover;
+    }
   }
 }
 
@@ -195,6 +209,11 @@
     background-position: top center;
     background-image: url("../img/iphone-2-desktop.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/desktop/iphone-2-desktop@2x.png");
+      background-size: cover;
+    }
   }
 }
 
@@ -217,6 +236,11 @@
     background-image: url("../img/iphone-3-desk.png");
     background-position: top center;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desktop/iphone-3-desk@2x.png");
+      background-size: cover;
+    }
   }
 }
 
@@ -225,5 +249,17 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+  }
+}
+
+.advantages__description-tablet-br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }

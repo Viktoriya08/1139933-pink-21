@@ -47,15 +47,29 @@
   }
 }
 
-.page-header__logo img {
-  @media (min-width: @tablet-width) {
-    min-width: 145px;
-    height: auto;
-    display: block;
-  }
+.page-header__logo:hover path {
+  fill: @color-hit;
+}
 
-  @media (min-width: @desktop-width) {
-    width: @desktop-width;
+.page-header__logo:active path {
+  fill: @color-white;
+  opacity: 0.3;
+}
+
+.logo-head {
+  width: 74px;
+  height: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 147px;
+  }
+}
+
+.logo-momile-header {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 

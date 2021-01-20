@@ -45,15 +45,34 @@
   width: min-content;
 }
 
-.page-footer__icon-block:hover path {
-  fill: @color-hit;
+.page-footer__icon-block{
+  --logo-letters: @color-basic;
+  --logo-glass-stars: @color-basic;
+  --logo-glass: @color-hit;
+
+}
+.page-footer__icon-block:hover{
+  --logo-letters:@color-hit;
+  --logo-glass-stars: @color-hit;
+}
+
+.page-footer__icon-block:active{
+  --logo-letters: @color-white;
+  --logo-glass-stars: @color-white;
+  opacity: 0.3;
+}
+
+.logo-tablet-header-footer {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .page-footer__icon-block:active path {
   opacity: 0.3;
 }
 
-.page-footer__icon-block--desktop {
+/* .page-footer__icon-block--desktop {
   display: none;
 
   @media (min-width: @desktop-width) {
@@ -67,7 +86,7 @@
   @media (min-width: @desktop-width) {
     display: none;
   }
-}
+} */
 
 .social__item {
   margin-left: 4px;
@@ -102,11 +121,6 @@
 
 .social__link {
   display: block;
-  /*   margin-top: 12px;
-
-  @media (min-width: @desktop-width) {
-    margin-top: 16px;
-  } */
 }
 
 .page-footer__social {
@@ -122,7 +136,6 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  /*  min-width: 170px; */
 
   @media (min-width: @tablet-width) {
     padding-top: 12px;

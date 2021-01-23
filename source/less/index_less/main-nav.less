@@ -13,10 +13,10 @@
 .main-nav__toggle {
   position: absolute;
   top: -58px;
-  right: 17px;
+  right: 11px;
   z-index: 2;
   display: block;
-  width: 60px;
+  width: 67px;
   height: 50px;
   background: rgba(0, 0, 0, 0);
   cursor: pointer;
@@ -40,11 +40,16 @@
   content: "";
   position: absolute;
   top: 14px;
-  left: 12px;
+  left: 7px;
   width: 50px;
   height: 3px;
   background-color: @color-white;
   box-shadow: 0 10px 0 0 @color-white, 0 20px 0 0 @color-white;
+
+  @media (min-width: @tablet-width) {
+    top: 15px;
+    left: 12px;
+  }
 }
 
 .main-nav--closed .main-nav__toggle:hover::before {
@@ -91,8 +96,12 @@
   }
 }
 
-.main-nav--opened .main-nav {
-  margin-top: 43px;
+.main-nav--opened {
+  margin-top: 10px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .main-nav--closed .site-list__item {

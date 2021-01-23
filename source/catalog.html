@@ -9,18 +9,18 @@
         <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin>
         <link rel="stylesheet" href="css/style.min.css">
     </head>
-    <body class="page__body">
+    <body>
       <div class="main-wrapper">
-      <header class="page-header"> <!-- page-header--opened -->
+      <header class="page-header">
         <div class="page-header__wrapper">
           <a class="page-header__logo" href="index.html">
-            <svg class="logo-head" width="147" height="40" xmlns="http://www.w3.org/2000/svg" alt="Пинк логотип">
+            <svg class="logo-head" width="147" height="40" xmlns="http://www.w3.org/2000/svg" aria-label="Пинк логотип">
               <use class="logo-desktop-header" xlink:href="img/sprite.svg#logo-desktop"></use>
               <use class="logo-tablet-header" xlink:href="img/sprite.svg#logo-tablet"></use>
               <use class="logo-mobile-header" xlink:href="img/sprite.svg#logo-mobile"></use>
             </svg>
           </a>
-          <nav class="main-nav main-nav--closed main-nav--nojs"> <!-- main-nav--opened  closed -->
+          <nav class="main-nav main-nav--closed main-nav--nojs">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
               <ul class="main-nav__list site-list">
               <li class="site-list__item ">
@@ -31,7 +31,7 @@
                 </span>
               </li>
               <li class="site-list__item">
-                <span class="site-list__item--active">
+                <span class="site-list__line">
                   <a href="catalog.html">
                     Фотографии
                   </a>
@@ -65,20 +65,20 @@
                     Взгляните на фотографии, которые выкладывают пользователи! <br class="users-content__title-br"> Видите, как не хватает ваших?
                 </p>
                 <div class="users-content__wrapper">
-                    <a href="#" alt="Открыть полный размер фото">
+                    <a href="#" aria-label="Открыть полный размер фото">
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)" srcset="./img/desktop/panorama-desktop.webp 1x, ./img/desktop/panorama-desktop@2x.webp 2x">
                       <source type="image/webp" media="(min-width: 660px)" srcset="./img/tablet/panorama-tablet.webp 1x, ./img/tablet/panorama-tablet@2x.webp 2x">
                       <source type="image/webp" srcset="./img/mobile/panorama-mobile.webp 1x, ./img/mobile/panorama-mobile@2x.webp 2x">
                       <source media="(min-width: 1200px)" srcset="./img/desktop/panorama-desktop.jpg 1x, ./img/desktop/panorama-desktop@2x.jpg 2x">
                       <source media="(min-width: 660px)" srcset="./img/tablet/panorama-tablet.jpg 1x, ./img/tablet/panorama-tablet@2x.jpg 2x">
-                      <img class="users-content__foto users-content__foto--biger" src="./img/mobile/panorama-mobile.jpg" srcset="./img/mobile/panorama-mobile@2x.jpg 2x" width="100%" height="137" alt="Фото пользователя" />
+                      <img class="users-content__foto users-content__foto--biger" src="./img/mobile/panorama-mobile.jpg" srcset="./img/mobile/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Фото пользователя" />
                     </picture>
                     </a>
                     <div class="users-content__user users-content__user--userday">
                         <p class="users-content__user-title users-content__user-title--userday"><span class="users-content__name">Анна</span> (5 минут назад)</p>
                         <p class="users-content__text users-content__text--biger">
-                            Прыгать или нет? Напишите в комментарии свой совет и <br class="users-content__text-br"> смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+                            Прыгать или нет? Напишите в комментарии свой совет и <br class="users-content__text-br"> &zwj; смотрите прямую трансляцию в перископе, задавайте свои вопросы!
                         </p>
                         <div class="users-content__like users-content__like--userday">
                             <p class="users-content__number">
@@ -89,14 +89,14 @@
                   </div>
                   <div class="users-content__tablet-desktop">
                     <div class="users-content__wrapper">
-                        <a href="#" alt="Открыть полный размер фото">
+                        <a href="#" aria-label="Открыть полный размер фото">
                           <picture>
                             <source type="image/webp" media="(min-width: 1200px)" srcset="./img/desktop/photo-1-desktop.webp 1x, ./img/desktop/photo-1-desktop@2x.webp 2x">
                             <source type="image/webp" media="(min-width: 660px)" srcset="./img/tablet/photo-1-tablet.webp 1x, ./img/tablet/photo-1-tablet@2x.webp 2x">
                             <source type="image/webp" srcset="./img/mobile/photo-1-mobile.webp 1x, ./img/mobile/photo-1-mobile@2x.webp 2x">
                             <source media="(min-width: 1200px)" srcset="./img/desktop/photo-1-desktop.jpg 1x, ./img/desktop/photo-1-desktop@2x.jpg 2x">
-                            <source media="(min-width: 660px)" srcset="./img/tablet/photo-1-tablet.jpg 1x, ./img/tablet/photo-1-tablet@2x.jpg">
-                            <img class="users-content__foto" src="./img/mobile/photo-1-mobile.jpg" srcset="./img/mobile/photo-1-mobile@2x.jpg 2x" width="100%" height="180" alt="Фото пользователя" />
+                            <source media="(min-width: 660px)" srcset="./img/tablet/photo-1-tablet.jpg 1x, ./img/tablet/photo-1-tablet@2x.jpg 2x">
+                            <img class="users-content__foto" src="./img/mobile/photo-1-mobile.jpg" srcset="./img/mobile/photo-1-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя" />
                           </picture>
                         </a>
                         <div class="users-content__user">
@@ -113,13 +113,13 @@
                     </div>
 
                     <div class="users-content__wrapper">
-                      <a href="#" alt="Открыть полный размер фото">
+                      <a href="#" aria-label="Открыть полный размер фото">
                         <picture>
                           <source type="image/webp" media="(min-width: 1200px)" srcset="./img/desktop/photo-2-desktop.webp 1x, ./img/desktop/photo-2-desktop@2x.webp 2x">
                           <source type="image/webp" media="(min-width: 660px)" srcset="./img/tablet/photo-2-tablet.webp 1x, ./img/tablet/photo-2-tablet@2x.webp 2x">
                           <source type="image/webp" srcset="./img/mobile/photo-2-mobile.webp 1x, ./img/mobile/photo-2-mobile-wp@2x.webp 2x">
                           <source media="(min-width: 1200px)" srcset="./img/desktop/photo-2-desktop.jpg 1x, ./img/desktop/photo-2-desktop@2x.jpg 2x">
-                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-2-tablet.jpg 1x, ./img/tablet/photo-2-tablet@2x.jpg">
+                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-2-tablet.jpg 1x, ./img/tablet/photo-2-tablet@2x.jpg 2x">
                           <img class="users-content__foto" src="./img/mobile/photo-2-mobile.jpg" srcset="./img/mobile/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя" />
                         </picture>
                       </a>
@@ -137,13 +137,13 @@
                     </div>
 
                     <div class="users-content__wrapper">
-                      <a href="#" alt="Открыть полный размер фото">
+                      <a href="#" aria-label="Открыть полный размер фото">
                         <picture>
                           <source type="image/webp" media="(min-width: 1200px)" srcset="./img/desktop/photo-3-desktop.webp 1x, ./img/desktop/photo-3-desktop@2x.webp 2x">
                           <source type="image/webp" media="(min-width: 660px)" srcset="./img/tablet/photo-3-tablet.webp 1x, ./img/tablet/photo-3-tablet@2x.webp 2x">
                           <source type="image/webp" srcset="./img/mobile/photo-3-mobile.webp 1x, ./img/mobile/photo-3-mobile@2x.webp 2x">
                           <source media="(min-width: 1200px)" srcset="./img/desktop/photo-3-desktop.jpg 1x, ./img/desktop/photo-3-desktop@2x.jpg 2x">
-                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-3-tablet.jpg 1x, ./img/tablet/photo-3-tablet@2x.jpg">
+                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-3-tablet.jpg 1x, ./img/tablet/photo-3-tablet@2x.jpg 2x">
                           <img class="users-content__foto" src="./img/mobile/photo-3-mobile.jpg" srcset="./img/mobile/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя" />
                         </picture>
                       </a>
@@ -161,13 +161,13 @@
                     </div>
 
                     <div class="users-content__wrapper">
-                      <a href="#" alt="Открыть полный размер фото">
+                      <a href="#" aria-label="Открыть полный размер фото">
                         <picture>
                           <source type="image/webp" media="(min-width: 1200px)" srcset="./img/desktop/photo-4-desktop.webp 1x, ./img/desktop/photo-4-desktop@2x.webp 2x">
                           <source type="image/webp" media="(min-width: 660px)" srcset="./img/tablet/photo-4-tablet.webp 1x, ./img/tablet/photo-4-tablet@2x.webp 2x">
                           <source type="image/webp" srcset="./img/mobile/photo-4-mobile.webp 1x, ./img/mobile/photo-4-mobile@2x.webp 2x">
                           <source media="(min-width: 1200px)" srcset="./img/desktop/photo-4-desktop.jpg 1x, ./img/desktop/photo-4-desktop@2x.jpg 2x">
-                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-4-tablet.jpg 1x, ./img/tablet/photo-4-tablet@2x.jpg">
+                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-4-tablet.jpg 1x, ./img/tablet/photo-4-tablet@2x.jpg 2x">
                           <img class="users-content__foto" src="./img/mobile/photo-4-mobile.jpg" srcset="./img/mobile/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя" />
                         </picture>
                       </a>
@@ -185,13 +185,13 @@
                     </div>
 
                     <div class="users-content__wrapper">
-                      <a href="#" alt="Открыть полный размер фото">
+                      <a href="#" aria-label="Открыть полный размер фото">
                         <picture>
                           <source type="image/webp" media="(min-width: 1200px)" srcset="./img/desktop/photo-5-desktop.webp 1x, ./img/desktop/photo-5-desktop@2x.webp 2x">
                           <source type="image/webp" media="(min-width: 660px)" srcset="./img/tablet/photo-5-tablet.webp 1x, ./img/tablet/photo-5-tablet@2x.webp 2x">
                           <source type="image/webp" srcset="./img/mobile/photo-5-mobile.webp 1x, ./img/mobile/photo-5-mobile@2x.webp 2x">
                           <source media="(min-width: 1200px)" srcset="./img/desktop/photo-5-desktop.jpg 1x, ./img/desktop/photo-5-desktop@2x.jpg 2x">
-                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-5-tablet.jpg 1x, ./img/tablet/photo-5-tablet@2x.jpg">
+                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-5-tablet.jpg 1x, ./img/tablet/photo-5-tablet@2x.jpg 2x">
                           <img class="users-content__foto" src="./img/mobile/photo-5-mobile.jpg" srcset="./img/mobile/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя" />
                         </picture>
                         </a>
@@ -209,13 +209,13 @@
                     </div>
 
                     <div class="users-content__wrapper">
-                      <a href="#" alt="Открыть полный размер фото">
+                      <a href="#" aria-label="Открыть полный размер фото">
                         <picture>
                           <source type="image/webp" media="(min-width: 1200px)" srcset="./img/desktop/photo-6-desktop.webp 1x, ./img/desktop/photo-6-desktop@2x.webp 2x">
                           <source type="image/webp" media="(min-width: 660px)" srcset="./img/tablet/photo-6-tablet.webp 1x, ./img/tablet/photo-6-tablet@2x.webp 2x">
                           <source type="image/webp" srcset="./img/mobile/photo-6-mobile.webp 1x, ./img/mobile/photo-6-mobile@2x.webp 2x">
                           <source media="(min-width: 1200px)" srcset="./img/desktop/photo-6-desktop.jpg 1x, ./img/desktop/photo-6-desktop@2x.jpg 2x">
-                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-6-tablet.jpg 1x, ./img/tablet/photo-6-tablet@2x.jpg">
+                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-6-tablet.jpg 1x, ./img/tablet/photo-6-tablet@2x.jpg 2x">
                           <img class="users-content__foto" src="./img/mobile/photo-6-mobile.jpg" srcset="./img/mobile/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="Фото пользователя" />
                         </picture>
                       </a>
@@ -242,12 +242,12 @@
             </p>
                 <form class="change__wrapper" action="https://echo.htmlacademy.ru">
                   <div class="change__download">
-                      <input class="visually-hidden" type="file" name="foro-download" id="foro-download" alt="Загрузить фото"/>
+                      <input class="visually-hidden" type="file" name="foro-download" id="foro-download" aria-label="Загрузить фото"/>
                       <label class="change__download-foto" for="foro-download">
                         <picture>
                           <source type="image/webp" media="(min-width: 660px)" srcset="./img/tablet/photo-7-tablet.webp 1x, ./img/tablet/photo-7-tablet@2x.webp 2x">
                           <source type="image/webp" srcset="./img/mobile/photo-7-mobile.webp 1x, ./img/mobile/photo-7-mobile@2x.webp 2x">
-                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-7-tablet.jpg 1x, ./img/tablet/photo-7-tablet@2x.jpg">
+                          <source media="(min-width: 660px)" srcset="./img/tablet/photo-7-tablet.jpg 1x, ./img/tablet/photo-7-tablet@2x.jpg 2x">
                           <img class="change__img" src="./img/mobile/photo-7-mobile.jpg" srcset="./img/mobile/photo-7-mobile@2x.jpg 2x" width="280" height="374" alt="Фото для загрузки в ленту пользователей" />
                         </picture>
                       </label>
@@ -272,17 +272,17 @@
                       </button>
 
                       <div class="change__foto-scale change__foto-scale-crop">
-                        <input class="visually-hidden" type="range" value="3" id=""/>
+                        <input class="visually-hidden" type="range" value="3" id="crop"/>
                         <div class="bar"></div>
                         <div class="toggle toggle--crop" tabindex="0" aria-label="Выбор как обрезать фото"></div>
                       </div>
                       <div class="change__foto-scale change__foto-scale-fill">
-                        <input class="visually-hidden" type="range" value="9" id=""/>
+                        <input class="visually-hidden" type="range" value="9" id="fill"/>
                         <div class="bar"></div>
                         <div class="toggle toggle--fill" tabindex="0" aria-label="Выбор как обрезать фото"></div>
                       </div>
                       <div class="change__foto-scale change__foto-scale-colour">
-                        <input class="visually-hidden" type="range" value="7" id=""/>
+                        <input class="visually-hidden" type="range" value="7" id="colour"/>
                         <div class="bar"></div>
                         <div class="toggle toggle--colour" tabindex="0" aria-label="Выбор как обрезать фото"></div>
                       </div>
@@ -297,7 +297,7 @@
 
         <footer class="page-footer">
           <div class="page-footer__icon">
-            <a class="page-footer__icon-block" href="index.html" alt="Ссылка на главную страницу Пинк">
+            <a class="page-footer__icon-block" href="index.html" aria-label="Ссылка на главную страницу Пинк">
               <svg width="147" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use class="logo-desktop-header" xlink:href="img/sprite.svg#logo-desktop"></use>
                 <use class="logo-tablet-header-footer" xlink:href="img/sprite.svg#logo-tablet"></use>

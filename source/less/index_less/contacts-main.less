@@ -1,5 +1,9 @@
 .contacts-main {
   padding: 20px 20px 5px;
+
+  @media (min-width: @desktop-width) {
+    padding: 20px 0 5px;
+  }
 }
 
 .contacts-main__wrapper {
@@ -16,9 +20,6 @@
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
-    /* justify-content: center; */
-    /*     padding-left: 130px;
-    padding-right: 130px; */
     max-width: 940px;
   }
 }
@@ -76,7 +77,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 26px;
+    padding-top: 23px;
   }
 }
 
@@ -120,7 +121,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    flex-basis: 30%;
+    flex-basis: 32%;
   }
 }
 
@@ -133,6 +134,6 @@
 
   @media (min-width: @desktop-width) {
     order: 2;
-    flex-basis: 30%;
+    flex-basis: 32%;
   }
 }

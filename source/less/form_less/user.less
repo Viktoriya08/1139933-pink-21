@@ -13,8 +13,7 @@
   @media (min-width: @desktop-width) {
     grid-column-start: 1;
     grid-column-end: 2;
-    text-align: end;
-    padding: 20px 20px 16px;
+    padding: 20px 10px 16px;
   }
 }
 
@@ -35,6 +34,8 @@
   @media (min-width: @desktop-width) {
     padding-top: 11px;
     padding-bottom: 37px;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -83,10 +84,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 56%;
+    width: 100%;
+    min-width: 0;
 
     &--long {
-      min-width: 63%;
+      min-width: 0;
     }
   }
 }

@@ -1,6 +1,9 @@
+
 const mainNavButton = document.querySelector(".main-nav__toggle");
 const header = document.querySelector(".page-header");
 const mainNav = document.querySelector(".main-nav");
+
+mainNav.classList.remove('main-nav--nojs');
 
 function menuToggle() {
   mainNavButton.addEventListener("click", function () {

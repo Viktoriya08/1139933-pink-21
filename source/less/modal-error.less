@@ -1,0 +1,47 @@
+
+.modal-error {
+  /* display: block;  для js*/
+  top: 68px;
+  bottom: auto;
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 23px 0;
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    padding-top: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+    padding-bottom: 0;
+  }
+}
+
+.modal__error-heading {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0 100px;
+  }
+}
+
+.modal__error-text {
+  @media (min-width: @tablet-width) {
+    padding: 0 70px;
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 61px;
+  }
+}

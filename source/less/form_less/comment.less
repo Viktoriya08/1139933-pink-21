@@ -9,7 +9,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 940px;
+  /*   max-width: 940px; */
     min-width: 940px;
     margin: 0 auto;
     padding: 43px 20px 41px;
@@ -51,8 +51,17 @@
   padding-left: 17px;
   width: 92%;
   height: 182px;
+  outline: none;
   border: 2px solid @color-button-disabled;
   border-radius: 1px;
+
+  &:hover {
+    border-color: @color-basic;
+  }
+
+  &:focus {
+    border-color: @color-hit;
+  }
 
   @media (min-width: @tablet-width) {
     text-align: center;

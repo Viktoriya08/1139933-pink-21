@@ -5,6 +5,8 @@
   }
 }
 
+
+
 .main-nav {
   position: relative;
   width: auto;
@@ -94,6 +96,26 @@
   &:active::after {
     background-color: fade(#ffffff, 30%);
   }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle:hover::before {
+  background-color: @color-hit;
+}
+
+.main-nav--opened .main-nav__toggle:active::before {
+  background-color: fade(@color-hit, 30%);
+}
+
+.main-nav--opened .main-nav__toggle:hover::after {
+  background-color: @color-hit;
+}
+
+.main-nav--opened .main-nav__toggle:active::after {
+  background-color: fade(@color-hit, 30%);
 }
 
 .main-nav--opened {

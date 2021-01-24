@@ -114,28 +114,28 @@
                                   Номер телефона
                                 </label>
                                 <div class="contacts__input-wraper contacts__input-wraper--phone">
-                                  <input class="contacts__details-input" type="text" name="phone" placeholder="Номер, пожалуйста" id="phone" />
+                                  <input class="contacts__details-input" type="tel" name="phone" placeholder="Номер, пожалуйста" id="phone" />
                                 </div>
                                 <label class="contacts__details contacts__details--down" for="adres">
                                   Адрес почты <br>
                                 </label>
                                 <div class="contacts__input-wraper contacts__input-wraper--mail contacts__input-wraper--down">
-                                  <input class="contacts__details-input" type="text" name="adres" placeholder="Введите почту *" id="adres" />
+                                  <input class="contacts__details-input" type="email" name="email" placeholder="Введите почту *" id="email" />
                                 </div>
                                 </div>
                           </fieldset>
                         </div>
-                        <div class="participant__platform">
-                          <fieldset class="participant__wraper-desktop">
-                            <legend class="participant__platform-title">
+                        <div class="participant__platform platform">
+                          <fieldset class="platform__wraper-desktop">
+                            <legend class="platform__platform-title">
                                 С каким приложением путешествовали?
                             </legend>
-                            <input class="visually-hidden participant__radio-input" type="radio" name="platform" value="platform-iOS" id="iOS" checked />
-                            <label class="participant__app" for="iOS"> Pink для iOS </label>
-                            <input class="visually-hidden participant__radio-input" type="radio" name="platform" value="platform-Android" id="Android" />
-                            <label class="participant__app" for="Android"> Pink на Android </label>
-                            <input class="visually-hidden participant__radio-input" type="radio" name="platform" value="platform-Windows" id="Windows" />
-                            <label class="participant__app" for="Windows"> Windows Phone </label>
+                            <input class="visually-hidden platform__radio-input" type="radio" name="platform" value="platform-iOS" id="iOS" checked />
+                            <label class="platform__app" for="iOS"> Pink для iOS </label>
+                            <input class="visually-hidden platform__radio-input" type="radio" name="platform" value="platform-Android" id="Android" />
+                            <label class="platform__app" for="Android"> Pink на Android </label>
+                            <input class="visually-hidden platform__radio-input" type="radio" name="platform" value="platform-Windows" id="Windows" />
+                            <label class="platform__app" for="Windows"> Windows Phone </label>
                           </fieldset>
                         </div>
                         <div class="participant__comment comment">
@@ -146,9 +146,9 @@
                             <textarea class="comment__emotion" name="comment" id="comment" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                           </fieldset>
                         </div>
-                        <div class="participant__send">
-                            <button class="participant__send-form" type="submit">Отправить форму</button>
-                            <p class="participant__important-text"><span class="participant__important">*</span> &mdash; Обязательные <span class="participant__important-desktop">для заполнения</span> поля</p>
+                        <div class="participant__send send">
+                            <button class="send__send-form" type="submit">Отправить форму</button>
+                            <p class="send__important-text"><span class="send__important">*</span> &mdash; Обязательные <span class="send__important-desktop">для заполнения</span> поля</p>
                         </div>
                     </form>
                 </div>
@@ -200,8 +200,8 @@
         </footer>
 
         <section class="modal modal-error modal-error-open">
-          <h2 class="modal__heading">Что-то пошло не так!</h2>
-          <p class="modal__text">
+          <h2 class="modal__error-heading">Что-то пошло не так!</h2>
+          <p class="modal__error-text">
             Проверьте поля, выделенные <br class="modal__br-tablet"> красным, <br class="modal__br-desktop"> скорее всего вы забыли их заполнить
           </p>
           <div class="modal__button-wraper modal__button-wraper--error">
@@ -210,8 +210,8 @@
         </section>
 
         <section class="modal modal-accepted modal-accepted-open">
-          <h2 class="modal__heading">Ваша заявка отправлена</h2>
-          <p class="modal__text modal__text--accepted">
+          <h2 class="modal__accepted-heading">Ваша заявка отправлена</h2>
+          <p class="modal__accepted-text">
             Спасибо за ваше участие, ваша заявка уже <br class="modal__br-desktop"> поступила к нам. В ближайшее время мы рассмотрим ее и <br class="modal__br-mobile"> оповестим вас.
           </p>
           <div class="modal__button-wraper">

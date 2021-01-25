@@ -67,7 +67,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
-    padding: 91px 30px 78px;
+    padding: 93px 30px 78px;
   }
 
   @media (min-width: @desktop-width) {
@@ -105,7 +105,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: auto;
+    height: 400px;
+
+    &--biger {
+      height: 506px;
+    }
   }
 }
 
@@ -213,7 +217,7 @@
   @media (min-width: @desktop-width) {
     margin: auto;
     max-width: 940px;
-    top: -965px;
+    top: -963px;
   }
 }
 
@@ -277,12 +281,20 @@
 }
 
 .users-content__number {
-  margin: 0;
+  margin: 0 0 0 16px;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
   color: @color-hit;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+
+    &--userday {
+      margin: 0 15px 0 16px;
+    }
+  }
 }
 
 .users-content__like {
